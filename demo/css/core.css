@@ -1,0 +1,22 @@
+body
+{
+	background-color: #1e2124;
+	font-family:Calibri;
+	color:#FFF;
+}
+
+h1
+{
+	font-size:32px;
+}
+
+h2
+{
+	font-size:24px;
+}
+
+input
+{
+	background:inherit;
+	color:inherit;
+}

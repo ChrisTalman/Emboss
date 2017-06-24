@@ -1,0 +1,22 @@
+{
+    "compilerOptions":
+    {
+        "target": "es5",
+        "module": "es2015",
+        "removeComments": true,
+        "downlevelIteration": true,
+        "alwaysStrict": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "classic",
+        "allowJs": false,
+        "allowSyntheticDefaultImports": false
+    },
+    "include":
+    [
+        "src/**/*"
+    ],
+    "exclude":
+    [
+        "node_modules"
+    ]
+}

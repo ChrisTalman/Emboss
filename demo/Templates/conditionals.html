@@ -1,0 +1,28 @@
+<h1 id="a">
+	{{if age > 0 && age < 21}}
+		<span>
+		{{if age > 0 && age < 13}}
+			<span>Child: {{print age}}.</span>
+		{{/if}}
+		{{elseif age > 12 && age < 20}}
+			<span>Teenager: {{print age}}.</span>
+		{{/elseif}}
+		{{else}}
+			<span>Emerging young adult: {{print age}}.</span>
+		{{/else}}
+		</span>
+	{{/if}}
+	{{elseif age >= 21 && age < 30}}
+		<span>Young adult: {{print age}}.</span>
+	{{/elseif}}
+	{{else}}
+		<span>Adult: {{print age}}.</span>
+	{{/else}}
+	<br>
+	{{if name === 'Jane'}}
+		Name recognised: {{print name}}. :)
+	{{/if}}
+	{{else}}
+		Name unrecognised: {{print name}}.
+	{{/else}}
+</h1>

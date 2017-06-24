@@ -1,0 +1,14 @@
+<h1 class="header" data-attribute="{{print attribute}}">{{print engine}} {{print version}}</h1>
+{{if subtitle}}
+	<h2>{{print subtitle}} Time: {{print Date.now()}}.</h2>
+{{/if}}
+<ul>
+{{each fruit in fruits key key count count}}
+	<li>Count: {{print count}}. Key: {{print key}}. Value: {{print fruit}}.</li>
+{{/each}}
+</ul>
+<ul>
+{{each member in team key key count count}}
+	<li>Count: {{print count}}. Key: {{print key}}. Value: {{print member}}.</li>
+{{/each}}
+</ul>

@@ -1,0 +1,53 @@
+<template>
+	<if condition="online">
+		<h1>
+			<print value="name">, you are online.
+		</h1>
+	</if>
+	<else>
+		<h1>
+			<print value="name">, you are offline.
+		</h1>
+	</else>
+	<ul>
+		<each item="item" in="items" count="count">
+			<li>
+				Item <print value="count">: <print value="item">.
+			</li>
+		</each>
+	</ul>
+</template>
+
+<template>
+	<h1 if.bind="online">
+		${name}, you are online.
+	</h1>
+	<h1 if.bind="!online">
+		${name}, you are offline.
+	</h1>
+	<ul>
+		<li repeat.for="item of items">
+			Item: ${item}.
+		</li>
+	</ul>
+</template>
+
+<template>
+	{{if online}}
+		<h1>
+			{{print name}}, you are online.
+		</h1>
+	{{/if}}
+	{{else}}
+		<h1>
+			{{print name}}, you are offline.
+		</h1>
+	{{/else}}
+	<ul>
+		{{for item in items count count}}
+			<li>
+				Item {{print count}}: {{print item}}.
+			</li>
+		{{/for}}
+	</ul>
+</template>
